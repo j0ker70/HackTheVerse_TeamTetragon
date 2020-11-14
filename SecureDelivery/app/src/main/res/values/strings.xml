@@ -19,4 +19,6 @@
     <string name="receive_transactions">Receive Amount</string>
     <string name="undelivered_products">Receive Products</string>
     <string name="complain">Complain</string>
+    <string name="name">Name</string>
+    <string name="performance_rating">Performance Rating</string>
 </resources>

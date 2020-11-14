@@ -2,6 +2,7 @@ package com.example.securedelivery;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -15,7 +16,7 @@ public class ManagerHomeActivity extends AppCompatActivity {
     }
 
     public void workersList(View view) {
-        Toast.makeText(ManagerHomeActivity.this, "I am here", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(ManagerHomeActivity.this, WorkersListActivity.class));
     }
 
     public void ordersList(View view) {
