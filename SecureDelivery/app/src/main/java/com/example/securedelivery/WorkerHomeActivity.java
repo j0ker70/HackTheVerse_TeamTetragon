@@ -1,16 +1,21 @@
 package com.example.securedelivery;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,8 +24,8 @@ import android.widget.Toast;
 public class WorkerHomeActivity extends AppCompatActivity {
 
     private GridView gridView;
-    String[] Options = {"Order List", "Option 2", "Option 3", "Option 4"};
-    int[] OptionImage = {R.drawable.order_list, R.drawable.order_list, R.drawable.order_list, R.drawable.order_list};
+    String[] Options = {"Order List", "Submit Transaction", "History", "Profile"};
+    int[] OptionImage = {R.drawable.order_list, R.drawable.payment, R.drawable.order_list, R.drawable.order_list};
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_worker_home);
@@ -34,12 +39,24 @@ public class WorkerHomeActivity extends AppCompatActivity {
                     Toast.makeText(WorkerHomeActivity.this,"0",Toast.LENGTH_SHORT).show();
                 }
                 else if(i==1){
-                    Toast.makeText(WorkerHomeActivity.this,"1",Toast.LENGTH_SHORT).show();
-
+                    AlertDialog.Builder builder = new AlertDialog.Builder(WorkerHomeActivity.this);
+                    builder.setTitle("Enter the amount");
+                    final View customLayout = getLayoutInflater().inflate(R.layout.custom_dialog,null);
+                    builder.setView(customLayout);
+                    builder.setPositiveButton(
+                                    "OK",
+                                    new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which)
+                                        {
+                                            EditText editText = customLayout.findViewById(R.id.editText);
+                                        }
+                                    });
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
                 }
                 else if(i==2){
                     Toast.makeText(WorkerHomeActivity.this,"2",Toast.LENGTH_SHORT).show();
-
                 }
                 else if(i==3){
                     Toast.makeText(WorkerHomeActivity.this,"3",Toast.LENGTH_SHORT).show();
