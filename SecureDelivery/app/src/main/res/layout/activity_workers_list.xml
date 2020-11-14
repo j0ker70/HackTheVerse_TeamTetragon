@@ -5,12 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".WorkersListActivity">
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/workerListViewId"
+        android:divider="@color/black"
+        android:dividerHeight="1dp"
         >
 
     </ListView>
