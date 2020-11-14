@@ -23,35 +23,45 @@
         android:layout_marginHorizontal="30dp"
         android:layout_height="wrap_content"
         android:text="@string/user_name"
+        android:textStyle="bold"
         />
     <EditText
+        android:id="@+id/usernameEditTextId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="10dp"
+        android:hint="@string/user_name"
         />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
         android:text="@string/password"
+        android:textStyle="bold"
         />
+
     <EditText
+        android:id="@+id/passwordEditTextId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="30dp"
+        android:hint="@string/password"
         />
 
     <Button
+        android:id="@+id/loginButtonId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login"
         android:layout_marginHorizontal="30dp"
         android:layout_marginVertical="20dp"
         android:background="@drawable/button_bg"
+        android:onClick="login"
         />
     <TextView
         android:layout_width="match_parent"
