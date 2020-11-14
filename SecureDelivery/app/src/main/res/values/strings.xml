@@ -13,4 +13,10 @@
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="user_name">User name</string>
+    <string name="worker_list">Workers List</string>
+    <string name="order_list">Orders List</string>
+    <string name="assign_orders">Assign Products</string>
+    <string name="receive_transactions">Receive Amount</string>
+    <string name="undelivered_products">Receive Products</string>
+    <string name="complain">Complain</string>
 </resources>
