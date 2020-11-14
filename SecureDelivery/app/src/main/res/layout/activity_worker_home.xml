@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
     tools:context=".WorkerHomeActivity">
 
-    <TextView
+    <GridView
+        android:id="@+id/gridview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome, Worker!"
-        android:textAlignment="center"
-        />
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/grid_colour"
+        android:numColumns="2"/>
 
 </LinearLayout>
