@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Secure Delivery</string>
     <string name="welcome">Welcome</string>
+    <string name="mobile">Price 15000 Tk</string>
+    <string name="laptop">Price 500000 Tk</string>
+    <string name="watch">Price 1200 Tk</string>
+    <string name="mouse">Price 800 Tk</string>
+    <string name="router">Price 1500 Tk</string>
+    <string name="camera">Price 400000 Tk</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
