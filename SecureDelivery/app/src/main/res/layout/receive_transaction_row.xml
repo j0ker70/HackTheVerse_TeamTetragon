@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/propic"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameReceiveTransactionTextViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Merajul Arefin Pial"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/amountReceiveTransactionTextViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SecureDelivery">
-        <activity android:name=".OrdersListActivity"></activity>
+        <activity android:name=".ComplainActivity"></activity>
+        <activity android:name=".ReceiveTransactionsActivity" />
+        <activity android:name=".AssignProductsActivity" />
+        <activity android:name=".OrdersListActivity" />
         <activity android:name=".WorkersListActivity" />
         <activity android:name=".CustomerHomeActivity" />
         <activity android:name=".ManagerHomeActivity" />

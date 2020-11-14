@@ -24,11 +24,11 @@ public class ManagerHomeActivity extends AppCompatActivity {
     }
 
     public void assignProducts(View view) {
-        Toast.makeText(ManagerHomeActivity.this, "I am here", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(ManagerHomeActivity.this, AssignProductsActivity.class));
     }
 
     public void receiveAmount(View view) {
-        Toast.makeText(ManagerHomeActivity.this, "I am here", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(ManagerHomeActivity.this, ReceiveTransactionsActivity.class));
     }
 
     public void receiveProduct(View view) {
@@ -36,6 +36,6 @@ public class ManagerHomeActivity extends AppCompatActivity {
     }
 
     public void complain(View view) {
-        Toast.makeText(ManagerHomeActivity.this, "I am here", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(ManagerHomeActivity.this, ComplainActivity.class));
     }
 }
