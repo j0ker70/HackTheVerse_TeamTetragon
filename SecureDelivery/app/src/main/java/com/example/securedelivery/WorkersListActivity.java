@@ -65,8 +65,8 @@ public class WorkersListActivity extends AppCompatActivity {
             TextView myNames = view.findViewById(R.id.workerNameTextViewId);
             TextView myRatings = view.findViewById(R.id.workerRatingTextViewId);
 
-            myNames.setText("Performance: " + rNames[position]);
-            myRatings.setText("Price: " + Double.toString(rRatings[position]));
+            myNames.setText(rNames[position]);
+            myRatings.setText("Performance: " + Double.toString(rRatings[position]));
 
             return view;
         }
