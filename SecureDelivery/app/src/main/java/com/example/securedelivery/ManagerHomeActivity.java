@@ -20,7 +20,7 @@ public class ManagerHomeActivity extends AppCompatActivity {
     }
 
     public void ordersList(View view) {
-        Toast.makeText(ManagerHomeActivity.this, "I am here", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(ManagerHomeActivity.this, OrdersListActivity.class));
     }
 
     public void assignProducts(View view) {

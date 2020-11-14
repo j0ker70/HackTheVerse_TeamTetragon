@@ -21,4 +21,6 @@
     <string name="complain">Complain</string>
     <string name="name">Name</string>
     <string name="performance_rating">Performance Rating</string>
+    <string name="address">Address</string>
+    <string name="price">Price</string>
 </resources>
