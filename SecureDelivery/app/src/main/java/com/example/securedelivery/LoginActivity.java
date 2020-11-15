@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
         } else if (match == Match.MANAGER) {
             startActivity(new Intent(LoginActivity.this, ManagerHomeActivity.class));
         } else {
-            startActivity(new Intent(LoginActivity.this, CustomerHomeActivity.class));
+            startActivity(new Intent(LoginActivity.this, Customer_Order_Shop.class));
         }
     }
 }
