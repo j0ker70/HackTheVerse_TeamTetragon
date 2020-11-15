@@ -25,7 +25,7 @@ public class WorkerHomeActivity extends AppCompatActivity {
 
     private GridView gridView;
     String[] Options = {"Order List", "Submit Transaction", "History", "Profile"};
-    int[] OptionImage = {R.drawable.order_list, R.drawable.payment, R.drawable.order_list, R.drawable.order_list};
+    int[] OptionImage = {R.drawable.order_list, R.drawable.payment, R.drawable.history, R.drawable.profile};
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_worker_home);
