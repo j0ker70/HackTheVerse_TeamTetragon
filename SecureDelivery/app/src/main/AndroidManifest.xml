@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SecureDelivery">
-        <activity android:name=".ComplainActivity"></activity>
+        <activity android:name=".Workers_Deleivery_Order_List"></activity>
+        <activity android:name=".ComplainActivity" />
         <activity android:name=".ReceiveTransactionsActivity" />
         <activity android:name=".AssignProductsActivity" />
         <activity android:name=".OrdersListActivity" />
